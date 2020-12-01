@@ -1,0 +1,15 @@
+1，数量 毛利  部分    才  实时计算价格 
+2，匹配de 等
+3 语言
+4X iframe TM
+5 tm 引擎 所有需要查的国家
+6 提示双倍
+
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    console.log( this.responseText.match(/KAIKSO-IN|Blue Vessel|ShenTan|Holo Cute|Sunsline|Loveless Land|mei yun|Anglerfish|huyipin|徐嫚：|CHIC\*MALL|Cool Ring|Landslide|黄坤： |Pink Rose Dream|Romancy|PayneRoosevelt|（自建）  |张焦组 孔丽：|C-Pioneer|quandi|CloudWhisper|Flying Light|HERME|Fashion ER|张泽涛：|GracefulVar|Kifdiifgoso|nanshoudeyi|Golden Lank|tangyuandain|gaibian|产苗霞自建账号：|Relang|ZEROYOYO|管燕：|Angelo Morris|JERALD GATES|Nancy99|yanruoshangmao|朱杰：|Snowman smile|Everley Hutt|Rosali rait|汪熙组：|AZ080US |DogReMi|AZ084US |Fuhui Inc|AZ090US |Anhui Furunde Maoyi Store|AZ225UK |Tammy Yerkes|AZ253UK |Clara Tracy|AZ262UK |Adela Hodge|邱益华：|Philip Stuart|TOMMY LAMBERT|CHRISTY HARRELL|LINKLANK| 邱益华做跟卖的店铺 欧洲站|李彩虹组跟卖账号：|zhuyu| 欧洲， |ZHIXX MALL| 欧洲，|Star Eleven|jiutinggood| 欧洲 |Freeflystyle On Line Store| 北美 |Zero Thorndike| 北美 |LIANAN IRWIN/gi))
+    }
+  };
+  xhttp.open("GET", "https://www.amazon.de/-/en/gp/offer-listing/B071YPN12Z/ref=dp_olp_NEW_mbc?ie=UTF8&condition=NEW", true);
+  xhttp.send();

@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "name": "amz",
+    "version": "2020.11.04",
+    "browser_action": {},
+    "description": "亚马逊快",
+    "key": "ogacfihengbkdokjaakjmifkilakdgom",
+    "commands": {
+        "findOurSeller": {
+			"suggested_key": {
+			    "default": "Alt+Q"
+			},
+            "description": "findOurSeller"
+        }
+    },
+    "web_accessible_resources": [
+        "/*"
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "bookmarks",
+        "contextMenus",
+        "\u003Call_urls>",
+        "http://*/*",
+        "https://*/*",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "storage",
+        "unlimitedStorage",
+        "notifications",
+		"management"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+	"content_scripts": [
+	    {
+	        "js": [
+	            "jquery-3.5.1.min.js","content.js"
+	        ],
+	        "matches": [
+	            "<all_urls>"
+	        ],
+	        "exclude_matches": [],
+	        "run_at": "document_start"
+	    }
+	]
+}
